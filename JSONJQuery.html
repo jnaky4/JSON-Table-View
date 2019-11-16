@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title></title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>       
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <script defer src="javascript.js"></script>
+    </head>
+    <body>
+        <h1>Repo Counter</h1>
+        <form>
+            Input a URL with an API endpoint<br>
+            <input id="url" type="text" name="URL" value = "http://augur.osshealth.io:5000/api/unstable/repos" >
+        </form>
+        <button id="submit">submit</button>
+        <h3 id="h3">What data would you like to pull? I recommend Repo_group_id</h3>
+        <div class="dropdown">
+          <span id="dropbutton">JSON keys</span>
+          <div class="dropdown-content">
+            <p id ="dropdownlist"></p>
+          </div>
+        </div>
+        <h2></h2>
+        <div class="loader"></div>
+        
+    <h4 id="h4" style="margin: 0px;">Repo # &emsp;&emsp;&emsp;count</h4>
+        <div class="tablerow">
+            <div id="column1"></div>
+            <div id="bar-horzontal"></div>
+        </div>
+    </body>
+</html>
